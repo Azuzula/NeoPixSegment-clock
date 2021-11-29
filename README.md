@@ -1,22 +1,51 @@
 # NeoPixSegment-clock
-Code for clock based on my NeoPixSegment display.
+**CZ**:<br>
+Arduino kód pro hodiny postavené na displeji NeoPixSegment.<br>
+[NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Knihovna k displeji - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
+Funkce:<br>
+Hodiny ukazují aktuální čas 😲<br>
+Změna barvy navigačním tlačítkem, zmáčknout do stran. Bazva se uloží až za 10s.<br>
+Změna času navigačním tlačítkem. Zmáčkni střed alespoň na 3s. Potom změna čísel tlačítkem do stran, potvrdit středem tlačítka.<br>
 
+Nastavení přes USB serial konzoli. Nastav 9600baud pro komunikaci, zakončení řádku NL (New line).<br>
+Nastavení je v češtině. Kdyby měl někdo zájem udělat překlad do jiných jazyků, je vítán. Pošli mi hotový překlad, nebo vytvoř fork. Děkuji.<br>
+Nastavení času<br>
+Nastavení data<br>
+Vlastní barva pro den i noc<br>
+Pir senzor zap/vyp<br>
+Časování doby svitu (když je PIR zapnutý)<br>
+Minimální jas<br>
+Exponent pro jas<br>
+Noční mód<br>
+Dvojtečka bliká/svítí pro den i noc<br>
+Reset do výchozího nastavení<br>
+
+Zapojení pinů (napájecí napětí modulů):<br>
+Arduino > NeoPix Segment displej: D3 > DIN, (5V)<br>
+Arduino > TEMT6000: A0 > S, (5V)<br>
+Arduino > DS3231: A4 > SDA, A5 > SCL, (5V)<br>
+Arduino > PIR: D2 > OUT, (3,3V)<br>
+Arduino > navigační 3Way tlačítko:  D5 > 1, D6 > T, D7 > 2, GND > C<br>
+
+
+**EN**:<br>
+Arduino code for clocks based on NeoPixSegment display.<br>
+[NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Library for display - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
 Functions: <br>
-Clocks show actual time :o<br>
-Color change with 3way button. Push to the sides for color change.<br>
+Clocks show actual time 😲<br>
+Color change with 3way button. Push to the sides for color change. Color save after 10s.<br>
 Time change with 3way button. Push mid button for atleast 3 sec, then use side and mid button for time change.<br>
 
-Functions over USB serial monitor. Set 9600 baud for comunication.<br>
-Settings are in Czech language. If you want to translate it, you can. Just send me your translatation or make fork.<br>
+Functions over USB serial monitor. Set 9600 baud for comunication and NL (new line) for end of line.<br>
+Settings are in Czech language. If you want to translate it, you can. Just send me your translatation or make fork. Thank you<br>
 Time set<br>
 Date set<br>
-Your own color set<br>
+Your own color for day and night<br>
 Pir sensor on/off<br>
 Light timing (with Pir on)<br>
 Minimum brightness<br>
 Brightness exponent<br>
 Night mode on/off<br>
-Night your own color<br>
-Coloon blink day on/off<br>
-Coloon night blink on/off<br>
+Coloon blink day or night on/off<br>
 Factory reset<br>
+
