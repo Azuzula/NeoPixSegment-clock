@@ -138,11 +138,6 @@ void setup()
   Serial << F("Pro víc informací napiš příkaz help") << endl;
   Serial << F("*************") << endl << endl;
   delay(100);
-  //RESET();
-  // načteme hodnoty nastavení z EEPROM paměti
-  //pirActive = EEPROM.read(PIR);
-  //mod = EEPROM.read(JAS_OFSET);
-  //minimum = EEPROM.read(JAS_MIN);
 
   // Initialize display color
   Pix.Init(displayPin, LedsPerSegment, Format, Debug);
@@ -159,29 +154,7 @@ void setup()
   pinMode(minusPin, INPUT_PULLUP);
 
   Jas = Jas_read();
-
-  //****** DEMO - spustí se při zapnutí hodin a držení mínus tlačítka
-  //  if (!digitalRead(minusPin)) {
-  //    Pix.SetColor(myColor[0][0], myColor[0][1], myColor[0][2], ALL_SEGMENTS);
-  //    Pix.SetBrightness(0);
-  //    Pix.WriteText("8888", LEFT_ALIGMENT);
-  //    Pix.WriteDotColon(1, 2);
-  //    Pix.Show();
-  //    WakeUp();
-  //    byte a = 1;
-  //    while (!digitalRead(minusPin)) {
-  //      delay(500);
-  //      a++;
-  //      if (a == 12) {
-  //        a = 0;
-  //      }
-  //      Pix.SetColor(myColor[a][0], myColor[a][1], myColor[a][2], ALL_SEGMENTS);
-  //      Pix.Show();
-  //    }
-  //    SleepNow();
-  //  }
-
-  //Pix.Show();
+   
   if (Jas <= 2 && (bool)EEPROM.read(NOC)) {
     Pix.SetColor(myColor[13][0], myColor[13][1], myColor[13][2], ALL_SEGMENTS);
     Pix.WriteDotColon(!(bool)EEPROM.read(NCOLON), 2);
@@ -192,9 +165,6 @@ void setup()
     Pix.WriteDotColon(!(bool)EEPROM.read(COLON), 2);
     colon = EEPROM.read(COLON);
   }
-  //colorIndex = EEPROM.read(COLOR_INDEX);
-  //mod = (float)EEPROM.read(JAS_OFSET) / 10;
-  //Sleeping = 0;
   WakeUp();
 }
 
@@ -322,37 +292,11 @@ void loop() {
     }
   }
 
-
-  // //spánek
-  //  if (Sleeping) {
-  //    Sleeping = 0;
-  //    Pix.WriteDotColon(!(bool)EEPROM.read(COLON), 2);
-  //    WakeUp();
-  //  }
-  //  else {
-  //    Pix.SetBrightness(Jas);
-  //  }
-  //
-  //  if (cSleep == (svit * 10)) {
-  //    //Serial.println("ZZZzzzZZZzzz...");
-  //    cSleep = 0;
-  //    SleepNow();
-  //    Sleeping = 1;
-  //    while (digitalRead(pirPin) == 0) {
-  //      delay(10);
-  //    }
-  //  }
-
-
   //Send data to the display
   if (!Sleeping) {
     Pix.Show();
     Pix.SetBrightness(Jas);
   }
-  //else {
-  //WakeUp();
-  //Pix.SetBrightness(0);
-  //}
 }
 
 void SleepNow() {
@@ -369,13 +313,11 @@ void SleepNow() {
     delay(40);
   }
   Pix.SetBrightness(0);
-  //Pix.Clear(ALL_SEGMENTS);
   Pix.Show();
 }
 
 void WakeUp() {
   //Serial.println("Vstávám");
-  //Sleeping = 0;
   byte JasStep = Jas / 10;
   JasTed = 0;
 
@@ -523,8 +465,6 @@ void setColor () {
   byte G = (myColor[colorIndex - 1][1]);
   byte B = (myColor[colorIndex - 1][2]);
   Pix.SetColor(R, G, B, ALL_SEGMENTS);
-  //Pix.Show();
 
   //Serial << "Barva = " << R << ", " << G << ", " << B << " " << endl;
-  //EEPROM.update(3, colorIndex);
 }
