@@ -1,7 +1,9 @@
 /*
    Final clock code for NeoPixSegment WS2812 7 segment LED display
    with DS3231 real time module and TEMT6000 light sensor.
-   GIT: https://github.com/Azuzula/NeoPixSegment
+   Library GIT: https://github.com/Azuzula/NeoPixSegment
+   Dependency: Adafruit NeoPixel https://github.com/adafruit/Adafruit_NeoPixel
+   This code GIT: https://github.com/Azuzula/NeoPixSegment-clock
    web: https://www.vokolo.cz
    From example by Azuzula, 2020
 
@@ -16,8 +18,6 @@
 
   Optional sensors:
   AM612 - PIR sensor.
-  SHT31 - Temperature and humidity sensor - Not implemented yet.
-  2x capacitive sensors - Not implemented yet.
 */
 
 // Sorry for Czech and English mixed variable names and comments.
