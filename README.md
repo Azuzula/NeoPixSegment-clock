@@ -1,10 +1,12 @@
 # NeoPixSegment-clock
+v2.05
+<br>
 **CZ**:<br>
 Arduino kód pro hodiny postavené na displeji NeoPixSegment.<br>
 [NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Knihovna k displeji - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
 Funkce:<br>
 Hodiny ukazují aktuální čas 😲<br>
-Změna barvy navigačním tlačítkem, zmáčknout do stran. Bazva se uloží až za 10s.<br>
+Změna barvy navigačním tlačítkem, zmáčknout do stran. Barva se uloží až za 10s.<br>
 Změna času navigačním tlačítkem. Zmáčkni střed alespoň na 3s. Potom změna čísel tlačítkem do stran, potvrdit středem tlačítka.<br>
 
 Nastavení přes USB serial konzoli. Nastav 9600baud pro komunikaci, zakončení řádku NL (New line).<br>
@@ -15,7 +17,7 @@ Vlastní barva pro den i noc<br>
 Pir senzor zap/vyp<br>
 Časování doby svitu (když je PIR zapnutý)<br>
 Minimální jas<br>
-Exponent pro jas<br>
+Modifikátor pro intenzitu jasu podle okolního světla<br>
 Noční mód<br>
 Dvojtečka bliká/svítí pro den i noc<br>
 Reset do výchozího nastavení<br>
@@ -33,7 +35,7 @@ Arduino code for clocks based on NeoPixSegment display.<br>
 [NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Library for display - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
 Functions: <br>
 Clocks show actual time 😲<br>
-Color change with 3way button. Push to the sides for color change. Color save after 10s.<br>
+Color change with 3way button. Push to the sides for color change. Color is saved after 10s.<br>
 Time change with 3way button. Push mid button for atleast 3 sec, then use side and mid button for time change.<br>
 
 Functions over USB serial monitor. Set 9600 baud for comunication and NL (new line) for end of line.<br>
