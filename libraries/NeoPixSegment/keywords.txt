@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For NeoPixSegment
+#######################################
+# Class
+#######################################
+
+NeoPixSegment	KEYWORD1
+
+#######################################
+# Methods and Functions
+#######################################	
+
+Init			KEYWORD2
+SetColor		KEYWORD2
+SetBlinkInterval	KEYWORD2
+SetBrightness		KEYWORD2
+
+WriteCharacter		KEYWORD2
+WriteDotColon		KEYWORD2
+WriteNumber		KEYWORD2
+WriteText		KEYWORD2
+
+Clear			KEYWORD2
+Show			KEYWORD2
+SegmentBlink		KEYWORD2
+ALL_SEGMENTS		KEYWORD2
