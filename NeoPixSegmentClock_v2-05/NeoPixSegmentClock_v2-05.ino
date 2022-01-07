@@ -144,9 +144,9 @@ void setup()
   Serial << F("Teplota:") << clock.readTemperature() << endl;
   if (EEPROM.read(FIRST_START) != 1) {
     Serial << F("První start, provádím reset") << endl;
+    clock.setDateTime(__DATE__, __TIME__);
     RESET();
     EEPROM.update(FIRST_START, 1);
-    clock.setDateTime(__DATE__, __TIME__);
   }
 
   //RESET();
