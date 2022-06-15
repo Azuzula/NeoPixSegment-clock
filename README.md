@@ -1,4 +1,12 @@
 # NeoPixSegment-clock
+v2.06
+<br>
+**CZ**:<br>
+Krátký stisk navigačního tlačítka zobrazí teplotu vyčtenou z modulu hodin. Zaokrouhleno na celé stupně Celsia.
+<br>
+**EN**:<br>
+Short press nav button for temperature in °C rounded to integers. Temperature is read from RTC module.
+<br>
 v2.05
 <br>
 **CZ**:<br>
