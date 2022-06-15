@@ -6,7 +6,7 @@ Krátký stisk navigačního tlačítka zobrazí teplotu vyčtenou z modulu hodi
 <br>
 **EN**:<br>
 Short press nav button for temperature in °C rounded to integers. Temperature is read from RTC module.
-<br>
+<br><br>
 v2.05
 <br>
 **CZ**:<br>
