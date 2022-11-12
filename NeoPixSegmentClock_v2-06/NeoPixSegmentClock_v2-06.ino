@@ -31,7 +31,7 @@
 #include <Streaming.h>
 
 //***** Datum dokončení, verze tohoto FW
-#define DATE_n_VERSION "5.1.2022 v2.05"
+#define DATE_n_VERSION "15.6.2022 v2.06"
 
 //***** EEPROM address
 #define FIRST_START 1
