@@ -1,14 +1,19 @@
 # NeoPixSegment-clock
-v2.06
+# **v2.07**<br>
+**CZ**:<br>
+Některé RTC moduly se zaseknou při pokusu o vyčtení teploty, tak jsem smazala tuhle část kódu. Použij v2.06 pokud tuto funkci chceš. Jiná změna není.
 <br>
+**EN**:<br>
+Some RTC modules stop working when try to read temperature so I delete temp reading. Use 2.06 if you want this function. No other changes was made.
+<br><br>
+# **v2.06**<br>
 **CZ**:<br>
 Krátký stisk navigačního tlačítka zobrazí teplotu vyčtenou z modulu hodin. Zaokrouhleno na celé stupně Celsia.
 <br>
 **EN**:<br>
 Short press nav button for temperature in °C rounded to integers. Temperature is read from RTC module.
 <br><br>
-v2.05
-<br>
+# **v2.05**<br>
 **CZ**:<br>
 Arduino kód pro hodiny postavené na displeji NeoPixSegment.<br>
 [NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Knihovna k displeji - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
@@ -60,4 +65,3 @@ Brightness exponent<br>
 Night mode on/off<br>
 Coloon blink day or night on/off<br>
 Factory reset<br>
-
