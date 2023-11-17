@@ -1,5 +1,5 @@
 # NeoPixSegment-clock
-# **v2.08**<br>https://github.com/Azuzula/NeoPixSegment-clock/blob/main/README.md
+# **v2.08**<br>
 **Cz** Drobné úpravy a opravy chyb.<br>
 **EN** Minor improvements and bug fix.<br>
 # **v2.07**<br>
