@@ -1,4 +1,7 @@
 # NeoPixSegment-clock
+# **v2.08**<br>https://github.com/Azuzula/NeoPixSegment-clock/blob/main/README.md
+**Cz** Drobné úpravy a opravy chyb.<br>
+**EN** Minor improvements and bug fix.<br>
 # **v2.07**<br>
 **CZ**:<br>
 Některé RTC moduly se zaseknou při pokusu o vyčtení teploty, tak jsem smazala tuhle část kódu. Použij v2.06 pokud tuto funkci chceš. Jiná změna není.
