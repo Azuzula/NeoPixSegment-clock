@@ -20,7 +20,7 @@ Short press nav button for temperature in °C rounded to integers. Temperature i
 **CZ**:<br>
 Arduino kód pro hodiny postavené na displeji NeoPixSegment.<br>
 [NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Knihovna k displeji - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
-[3D tištěné díly ke stažení na Thingiverse](https://www.thingiverse.com/thing:4780832)<br>
+[3D tištěné díly ke stažení na Printables]([https://www.thingiverse.com/thing:4780832](https://www.printables.com/cs/model/280269-neopix-segment-hodiny))<br>
 Funkce:<br>
 Hodiny ukazují aktuální čas 😲<br>
 Změna barvy navigačním tlačítkem, zmáčknout do stran. Barva se uloží až za 10s.<br>
@@ -50,7 +50,7 @@ Arduino > navigační 3Way tlačítko:  D5 > 1, D6 > T, D7 > 2, GND > C<br>
 **EN**:<br>
 Arduino code for clocks based on NeoPixSegment display.<br>
 [NeoPixSegment - e-shop](https://www.vokolo.cz/neopixsegment/). [Library for display - GitHub](https://github.com/Azuzula/NeoPixSegment)<br>
-[3D parts download from Thingiverse](https://www.thingiverse.com/thing:4780832)
+[3D parts download from Printables]([https://www.thingiverse.com/thing:4780832](https://www.printables.com/cs/model/280269-neopix-segment-hodiny))
 Functions: <br>
 Clocks show actual time 😲<br>
 Color change with 3way button. Push to the sides for color change. Color is saved after 10s.<br>
